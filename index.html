@@ -1,0 +1,91 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title>Website Design</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width =device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+
+	
+</head>
+<body>
+<section id = "banner"> 
+	<img src="images/logo.jpg" class="logo">
+	<div class="banner-text">
+		<h1>Hard codes</h1>
+		<p>Coding is cool!!</p>
+		<div class="banner-btn">
+			<a href="#"><span></span>Find Out</a>
+			<a href="#"><span></span>Find Out</a>
+			
+		</div>
+	</div>
+</section>
+<div id="sideNav">
+	<nav>
+		<ul>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">LANGUAGE</a></li>
+			<li><a href="#">OOPs</a></li>
+			<li><a href="#">PROGRAMS</a></li>
+			<li><a href="#">CONTACT US</a></li>
+		</ul>
+	</nav>
+</div>
+<div id="menuBtn">
+	<img src="images/menu.png" id="menu">
+</div>
+<!-- features-->
+<section id="feature">
+	<div class="title-text">
+		<p>FEATURES</p>
+		<h1>why choose us</h1>
+	</div>
+	<div class="feature-box">
+		<div class="features">
+			<h1>Java codes</h1>
+			<div class="features-desc">
+				<div class="feature-icon">
+					<i class="fa fa-shield" ></i>
+				</div>
+				<div class="feature-text">
+					<p>a person who assigns codes to objects or data: Medical coders assign standard codes to medical services so that insurance companies can pay claims. Computers. a person who writes computer code; a programmer.</p>
+					
+				</div>
+				
+			</div>
+		</div>
+		<div class="features-img">
+			<img src="images/Java.jpg">
+			
+		</div>
+		
+	</div>
+	
+</section>
+
+<script>
+	var menuBtn = document.getElementById("menuBtn")
+	var menuNav = document.getElementById("sideNav")
+	var menu = document.getElementById("menu")
+
+	sideNav.style.right = "-250px"
+
+	menuBtn.onclick = function(){
+		if (sideNav.style.right == "-250px") {
+			sideNav.style.right = "0";
+			menu.src = "images/close.png";
+		}
+		else{
+			sideNav.style.right = "-250px";
+			menu.src = "images/close.png";
+		}
+	}
+</script>
+
+
+
+
+</body>
+</html>
